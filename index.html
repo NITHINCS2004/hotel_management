@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL GP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>GEEKPROBIN</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>Experience Divine Comfort.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+                <li><a href="pay.html">Pay Cost</a></li>
+                <li><a href="cost.html">Cost Details</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h1>services</h1>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>Our Food Service/Food Runner ensures timely and efficient delivery of food and beverages to your room. Whether you're ordering a full meal or just a quick snack, our team is here to make sure you have everything you need for a comfortable stay. We pride ourselves on providing fresh, delicious food, delivered right to your door with a smile.</p>
+                        
+                        <a href="#" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #e2d517; color: white; text-decoration: none; border-radius: 4px; transition: background-color 0.3s ease;">Know More</a>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Our Refreshment service offers a variety of snacks, beverages, and refreshments to keep you energized throughout your stay. Whether you need a quick coffee break, a refreshing juice, or some light snacks, we've got you covered. Enjoy a selection of fresh and healthy options, delivered straight to your room for your convenience and satisfaction.</p>
+                       
+                        <a href="#" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #e2d517; color: white; text-decoration: none; border-radius: 4px; transition: background-color 0.3s ease;">Know More</a>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Our Housekeeping service is dedicated to maintaining the cleanliness and comfort of your room. Our professional team ensures that your room is spotless and well-organized, providing fresh linens, towels, and toiletries. We aim to create a welcoming and relaxing environment for you to enjoy your stay. Whether you need daily cleaning or a specific request, our team is here to meet your needs with prompt and courteous service.</p>
+
+                       
+                        <!--<button type = "button" class = "btn">Know More</button>-->
+                        <a href="#" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #e2d517; color: white; text-decoration: none; border-radius: 4px; transition: background-color 0.3s ease;">Know More</a>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Our Room Security service ensures your safety and peace of mind throughout your stay. With state-of-the-art security systems, 24/7 surveillance, and a dedicated security team, we provide a secure environment for you and your belongings. Enjoy your stay with the assurance that our professional team is always on alert, ready to respond to any situation and provide assistance whenever needed.</p>
+
+                       
+                        <a href="#" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #e2d517; color: white; text-decoration: none; border-radius: 4px; transition: background-color 0.3s ease;">Know More</a>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <!-- <form class = "book-form" id="registration-form" method="post">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class="form-item">
+                    <button type="button" name="button" class="btn" onclick="redirectToForm()">Book Now</button>
+                </div>
+                
+            </form> -->
+            <button type="button" name="button" class="btn" onclick="redirectToForm()">Book Now</button>
+        </div>
+        <!--<div class="book">
+            <div style="max-width: 30%; height: auto; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <img src="https://weaversresorts.com/wp-content/uploads/2022/03/RKP04503-1-scaled.jpg" alt="Resort Image" style="display: block; width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            
+            <div class="book-content">
+                <h2>Welcome to Weavers Resorts</h2>
+                <p>Enjoy a luxurious stay at Weavers Resorts, where comfort meets elegance. Our resort offers breathtaking views and world-class amenities.</p>
+                <a href="form.html" class="btn">Book Now</a>
+            </div>
+        </div>-->
+        <!--<div class="book" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <div class="book-image" style="flex: 0 0 45%; max-width: 45%;">
+                <img src="https://weaversresorts.com/wp-content/uploads/2022/03/RKP04503-1-scaled.jpg" alt="Resort Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <div class="book-content" style="flex: 0 0 50%; max-width: 50%; padding: 0 20px;">
+                <h2>Normal Rooms</h2>
+                <h2>Welcome to Weavers Resorts</h2>
+                <p>Enjoy a luxurious stay at Weavers Resorts, where comfort meets elegance. Our resort offers breathtaking views and world-class amenities.</p>
+                <a href="/DBMS/form.html" class="btn" style="display: block; width: 100%; text-align: center;">Book Now</a>
+            </div>
+        </div>--->
+        
+        
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+<ul>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Immerse yourself in luxurious comfort with spacious accommodations.
+    </li>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Enjoy breathtaking views of the city skyline or tranquil landscapes.
+    </li>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Indulge in personalized service and amenities tailored to your needs.
+    </li>
+</ul>
+<p>Experience the epitome of relaxation and sophistication in our luxury rooms. Each room is designed to provide a sanctuary of elegance and comfort, ensuring a memorable stay. Whether you're here for business or leisure, our attentive staff is committed to exceeding your expectations.</p>
+<p>Unwind in style with modern conveniences and thoughtful touches that enhance your stay. From plush bedding to stunning decor, every detail is crafted to create a luxurious retreat. Discover a new standard of hospitality and enjoy the ultimate escape at our resort.</p>
+<p class="rate">
+    <span>$149.00 /</span> Per Night
+</p>
+
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+<ul>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Enjoy spacious accommodations with modern amenities.
+    </li>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Indulge in breathtaking views of the surrounding landscapes.
+    </li>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Experience personalized service and attention to detail.
+    </li>
+</ul>
+<p>Escape to a world of luxury and comfort in our elegantly appointed rooms. Each room is designed to offer a blend of sophistication and relaxation, ensuring an unforgettable stay. Whether you're visiting for business or pleasure, our dedicated team is committed to making your experience exceptional.</p>
+<p>Discover tranquility and convenience with amenities that cater to your every need. From plush bedding to state-of-the-art technology, our rooms are equipped to provide a seamless stay. Immerse yourself in the essence of luxury and unwind in style at our exclusive retreat.</p>
+<p class="rate">
+    <span>$120.00 /</span> Per Night
+</p>
+
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+<ul>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Experience luxurious comfort with spacious, elegantly designed rooms.
+    </li>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Enjoy stunning views of the city skyline or serene landscapes.
+    </li>
+    <li>
+        <i class="fas fa-arrow-alt-circle-right"></i>
+        Indulge in personalized service and exclusive amenities.
+    </li>
+</ul>
+<p>Immerse yourself in unparalleled luxury and relaxation in our luxury rooms. Each room is meticulously crafted to offer a perfect blend of comfort and style, ensuring a memorable stay. Whether you're here for business or leisure, our dedicated team is committed to exceeding your expectations.</p>
+<p>Relax and unwind in a haven of tranquility with amenities designed for your utmost comfort. From luxurious bedding to state-of-the-art technology, every detail is thoughtfully curated to enhance your experience. Discover a new standard of hospitality and indulge in the ultimate retreat at our esteemed resort.</p>
+<p class="rate">
+    <span>$199.00 /</span> Per Night
+</p>
+
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved It</h3>
+<p>Thank you for making our stay truly unforgettable. The attention to detail and impeccable service exceeded our expectations. We can't wait to return!</p>
+<img src="images/cus1.jpg" alt="Customer Image">
+<span>Emily Johnson, United States</span>
+
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+<p>Our stay was incredibly comfortable and enjoyable. The amenities were top-notch, and the staff was attentive to every detail. Highly recommended!</p>
+<img src="images/cus2.jpg" alt="Customer Image">
+<span>Michael Brown, Australia</span>
+
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+<p>We absolutely loved our stay at your beautiful place. The atmosphere was serene, the rooms were cozy, and the service was exceptional. Can't wait to visit again!</p>
+<img src="images/cus3.jpg" alt="Customer Image">
+<span>Sophia Martinez, Spain</span>
+
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script>
+            // Your JavaScript code here
+            const navBtn = document.getElementById('nav-btn');
+            const cancelBtn = document.getElementById('cancel-btn');
+            const sideNav = document.getElementById('sidenav');
+            const modal = document.getElementById('modal');
+    
+            navBtn.addEventListener("click", function(){
+                sideNav.classList.add('show');
+                modal.classList.add('show');
+            });
+    
+            cancelBtn.addEventListener('click', function(){
+                sideNav.classList.remove('show');
+                modal.classList.remove('show');
+            });
+    
+            window.addEventListener('click', function(event){
+                if(event.target === modal){
+                    sideNav.classList.remove('show');
+                    modal.classList.remove('show');
+                }
+            });
+            
+    function redirectToForm() {
+        // Replace 'form_page.html' with the actual URL of your form page
+        window.location.href = 'form.html';
+    }
+
+
+        </script>
+    </body>
+</html>

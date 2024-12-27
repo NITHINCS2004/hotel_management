@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL GP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .book {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .book-form .form-item {
+            margin-bottom: 10px;
+        }
+
+        .book-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .book-form input {
+            width: calc(100% - 10px);
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .book-form .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .book-form .btn:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        .container:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        .container:hover {
+            background-color: #ddd;
+        }
+
+        .container h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .container p {
+            line-height: 1.6;
+            color: #555;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .back{
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        // Dynamically set the form action to include the current port
+        window.onload = function() {
+            const port = window.location.port;
+            const form = document.getElementById('registration-forms');
+            form.action = `http://localhost:8746/registers`;
+        };
+    </script>
+</head>
+<body>
+    
+    <div class="book">
+        <form class="book-form" id="registration-forms" method="post">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date:</label>
+                <input type="date" id="checkin-date" name="checkinDate">
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date:</label>
+                <input type="date" id="checkout-date" name="checkoutDate">
+            </div>
+            <div class="form-item">
+                <label for="bookingId">Booking ID:</label><br>
+                <input type="text" id="bookingId" name="bookingId" required>
+            </div>
+            <div class="form-item">
+                <label for="paidcost">Enter cost:</label>
+                <input type="number" id="paidcost" name="paidcost" required>
+            </div>
+            
+            <input type="submit" class="btn" value="Register">
+            <div class="back">
+                <button onclick="window.history.back()" class="btn">Back</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <div class="container">
+        <h2>Cost Calculation Function</h2>
+        <p>
+            The cost calculation function determines the total cost of a hotel stay based on several parameters:
+        </p>
+        <p>
+            It first calculates the number of nights between the check-in and check-out dates. Depending on the number of nights, the function applies different rates:
+        </p>
+        <ul>
+            <li>For the first 5 nights, it uses a base rate.</li>
+            <li>For the next 5 nights, it uses a slightly lower rate.</li>
+            <li>For any additional nights beyond the first 10, it uses a higher rate.</li>
+        </ul>
+        <p>
+            After calculating the cost for the nights, it multiplies this by the total number of guests (adults and children) to get the total guest cost. 
+        </p>
+        <p>
+            Finally, it subtracts any paid cost (advance payment) from the total guest cost to determine the final cost. 
+        </p>
+    </div>
+
+</body>
+</html>

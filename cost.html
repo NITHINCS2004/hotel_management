@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View User Data</title>
+    <style>
+        /* Basic CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Centering the button */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        /* Button styling */
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="redirectToUserData()">View User Data with Cost</button>
+    
+    <button onclick="window.history.back()">Back</button>
+    
+    <script>
+        function redirectToUserData() {
+            // Redirect to http://localhost:7856
+            window.location.href = 'http://localhost:6740';
+        }
+    </script>
+</body>
+</html>
+
